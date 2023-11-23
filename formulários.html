@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form>
+        <input type="text" placeholder="Seu nome"/><br/> 
+        <br/><label for="email"> Seu Email</label><br/>
+        <input id="email" type="email" /><br/><br/>
+
+        <!--Aqui em telefone, no pc não muda nada, mas no celular o type tel traz teclado numérico-->
+        <br/><label for="telefone"> Seu Telefone</label><br/>
+        <input id ="telefone" type="tel" /><br/><br/>
+
+        <!--Aqui em numbers, é possível limitar com min e max para a pessoa selecionar-->
+        <!--min= minimo , max=maximo , step = de quanto em quanto-->
+        <br/><label for="numeros"> Tem entre 1-8 anos de Experiência?</label><br/>
+        <input id ="numeros" type="number" min="2" max="8" step="2" />
+
+        
+        <input id="mais_exp" type="checkbox"/>
+        <label for="mais_exp">Se tem mais clique aqui</label><br/><br/>
+
+        <!--Color para selecionar paleta de cores-->
+
+        <label> Escolha uma cor: </label><input type="color" id="selectcollor"/>
+        <input type="checkbox" for="selectcollor"/><br/><br/>
+
+        <!--Para adicionar um arquivo-->
+        <label>Envie sua foto de Perfil</label><br/>
+        <input type="file" />
+
+        <!--Perguntas-->
+        <!--Se eu não atribuo ao radio o name="comida-favorita" ele não entende selecionar só 1-->
+        <p>Qual sua comida favorita ?</p>
+
+        <input type="radio" name="comid-fav" /><label>Vegana</label> 
+        <input type="radio" name="comid-fav" /><label>Foods</label> 
+        <input type="radio" name="comid-fav" /><label>Tradicional</label> <br /><br/>
+        <!--Outra forma de perguntar-->
+        <!--Se eu adicionar no select o atributo multiple pode selecionar mais de 1-->
+        <label>Qual seu filme favorito?</label><br />
+        <select multiple name="Filmes" id="listafilmes">
+            <option>Guerra</option>
+            <option>Comédia</option>
+            <option>Terror</option>
+        </select><br/><br/> 
+        <!--type submit envia, type reset limpa formulário-->
+        <button type="submit" id="Enviado">
+            Enviar
+        </button>
+        <button type="reset">
+            Limpar
+        </button>
+
+    </form>
+    
+</body>
+</html>
