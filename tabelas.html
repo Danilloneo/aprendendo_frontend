@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--A tag <tr> cria uma linha dentro de uma tag 
+        <table> e acomoda diversas tags <th> ou <td> que 
+        criam colunas dentro das linhas, formando uma 
+        tabela no documento. As únicas tags que devem existir 
+        diretamente dentro de <tr> são <th> ou <td> , 
+        responsáveis pela criação das colunas da tabela.-->
+    <section>    
+    <table><!--Inicio tabela-->
+        <caption>Verificando a Média de 2 Alunos</caption><!--Add comentário na tabela-->
+                <thead><!--Cabeça tabela-->
+                    <tr><!--Linha-->
+                    <th>Nome do Aluno</th> <!--Coluna1 titulo-->
+                    <th>Nota do Aluno</th> <!--Coluna2 titulo-->
+                    </tr>
+                </thead>
+                <tbody><!--Corpo tabela-->
+                    <tr><!--Linha Aluno A-->
+                        <td>Aluno A</td><!--Coluna1 filho-->
+                        <td>2</td><!--Coluna 2 filho-->
+                    </tr>
+                    <tr><!--Linha Aluno B-->
+                        <td>Aluno B</td><!--Coluna1 Filho-->
+                        <td>2</td> <!--Coluna2 Filho-->
+                    </tr>
+                </tbody>
+                <tfoot><!--Rodapé tabela-->
+                    <tr><!--Linha-->
+                        <td>Media</td><!--Coluna 1 Filho-->
+                        <td>2.0</td><!--Coluna 2 Filho-->
+                    </tr>
+                </tfoot><!--Fim do rodapé-->
+    </table><!--Fim da tabela-->
+</section>
+</body>
+</html>
