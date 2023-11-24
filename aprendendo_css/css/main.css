@@ -1,0 +1,21 @@
+h1 {color: red}
+
+/* Setando uma id esta dentro da section esportes*/
+#esportes h2 {color: green;}
+
+/* Setando uma id esta dentro da section economia*/
+#economia h2 {
+    color: gold;
+}
+
+/* Setando uma classe esta dentro da section id esportes*/
+.date-notice {
+    color: aqua;
+}
+
+* p {
+    color: red;
+    
+}
+
+
