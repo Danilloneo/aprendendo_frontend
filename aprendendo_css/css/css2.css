@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+     /*Colocar o cabeça-lho com os botoões em li um do lado do outro*/
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;  
+    /*Pega a div container que repete em todas as sectiosn
+    define uma largura para bons monitores, e centraliza na margem*/
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     /*Pega a div .article dentro da div container e coloca o display
+     flex um do lado do outro, flex-wrap: wrap para quebrar linha com conteudo,
+     justify content space between espaço entre as divs articles*/
+}
+
+.article article img {
+    width: 180px;
+    /*Aqui a div .article pega o artigo dentro dela e a imagem dentro
+    do artigo, e define a 180 px cada uma, como esses nomes
+    se repetem em todas as sections, ele alinha o layout de toda a pagina*/
+}
+
+.article article {
+    width: 30%;
+    /*Por ultimo ele pega o article  dentro da div article e define 30% de
+    largura só*/
+}
